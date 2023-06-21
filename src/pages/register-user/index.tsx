@@ -1,28 +1,29 @@
-import React, {useSatet} from "react";
+import {useState,ChangeEvent, FormEvent} from "react";
 
-const User = () => {
+
+export const RegisterUser = () => {
     const [nome, setNome] = useState('');
-    const [email, setEmail = useState('');
+    const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [telefone, setTelefone] = useState('');
     
-    const hadleNomeChange = (event) => {
+    const hadleNomeChange = (event: ChangeEvent<HTMLInputElement>) => {
         setNome(event.target.value);
     }
 
-    const hadleEmailChange = (event) => {
+    const hadleEmailChange = (event: ChangeEvent<HTMLInputElement>) => {
         setEmail(event.target.value);
     }
 
-    const hadleSenhaChange = (event) => {
+    const hadleSenhaChange = (event: ChangeEvent<HTMLInputElement>) => {
         setSenha(event.target.value);
     }
 
-    const hadleTelefoneChange = (event) => {
+    const hadleTelefoneChange = (event: ChangeEvent<HTMLInputElement>) => {
         setTelefone(event.target.value);
     }
 
-    const hadleSubmit = (event) => {
+    const hadleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         console.log('Dados do usuário: ', {nome, email, senha, telefone})
         setNome('');
@@ -40,7 +41,7 @@ const User = () => {
         <br />
         <label>
         Email:
-        <input type="email" value={email} onChange={handleEmailChange} />
+        <input type="email" value={email} onChange={hadleEmailChange} />
         </label>
         <br />
         <label>
