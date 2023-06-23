@@ -1,0 +1,68 @@
+.container {
+    width: 200px;
+    height: 500px;
+    margin: auto;
+    background-color: #F8F8FF;
+    padding: 200px 200px 200px 200px;
+    margin-top: auto;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serifs;
+    font-weight: 100;
+    
+    
+}
+
+.register-user-title {
+    display: block;
+    font-size: 20px;
+    color: grey;
+    line-height: 1.2;
+    text-align: center;
+    
+}
+
+.register-user-title img {
+    width: 90px;
+}
+
+.register-user-form {
+    color: grey;
+    padding: 10px;
+    height: 200px;
+    
+}
+
+
+.register-user-email {
+    padding: 8px;
+    height: 15px;
+    width: 200px;
+    display: flex;
+    border-radius: 8px;
+    border:#F8F8FF; 
+}
+.register-user-password {
+    padding: 8px;
+    height: 15px;
+    width: 200px;
+    display: flex;
+    border-radius: 8px;
+    border:#F8F8FF; 
+}
+
+
+button {
+    width: 120px;
+    height: 30px;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: darkorange;
+    border: #F8F8FF;
+    color: #F8F8FF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.txt2 {
+    color: blueviolet;
+}

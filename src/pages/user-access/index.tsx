@@ -3,15 +3,10 @@ import olxIMG from './assets/olx.png'
 import './styles.css';
 
 
-export const RegisterUser = () => {
-    const [nome, setNome] = useState('');
+export const UserAccess = () => {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
-    const [telefone, setTelefone] = useState('');
     
-    const hadleNomeChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setNome(event.target.value);
-    }
 
     const hadleEmailChange = (event: ChangeEvent<HTMLInputElement>) => {
         setEmail(event.target.value);
@@ -21,17 +16,12 @@ export const RegisterUser = () => {
         setSenha(event.target.value);
     }
 
-    const hadleTelefoneChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setTelefone(event.target.value);
-    }
 
     const hadleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        console.log('Dados do usuário: ', {nome, email, senha, telefone})
-        setNome('');
+        console.log('Dados do usuário: ', { email, senha})
         setEmail('');
         setSenha('');
-        setTelefone('');
     }
 
     return (
@@ -46,11 +36,6 @@ export const RegisterUser = () => {
                         </div>
                             <form onSubmit={hadleSubmit} className="register-user-form">
                             <label>
-                            Nome
-                            <input type="text" value={nome} onChange={hadleNomeChange} className="register-user-name" placeholder="Nome"/>
-                            </label>
-                            <br />
-                            <label>
                             E-mail
                             <input type="email" value={email} onChange={hadleEmailChange} className="register-user-email" placeholder="E-mail" />
                             </label>
@@ -60,16 +45,11 @@ export const RegisterUser = () => {
                             <input type="passaword" value={senha} onChange={hadleSenhaChange} className="register-user-password" placeholder="Senha com até 8 caracteres"/>
                             </label>
                             <br />
-                            <label>
-                            Telefone
-                            <input type="tel" value={telefone} onChange={hadleTelefoneChange} className="register-user-telefone" placeholder="(00) 00000-0000" />
-                            </label>
-                            <br />
                             <button type="submit" className="button">Cadastrar</button>
 
                             <div>
-                                <span className="txt">Já tem uma conta?</span>
-                                <a className="txt2" href="#">Entrar</a>
+                                <span className="txt">Não tem uma conta?</span>
+                                <a className="txt2" href="http://localhost:3000/usuario/register-user">Cadastre-se</a>
                             </div>
                         </form>
                 </div>   
@@ -81,6 +61,3 @@ export const RegisterUser = () => {
         
     );
 };
-
-
-
