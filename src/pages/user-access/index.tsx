@@ -26,32 +26,32 @@ export const UserAccess = () => {
 
     return (
         <div className="container">
-            <div className="container-register-user">
-                <div className="wrap-user">
+            <div className="container-register-access">
+                <div className="wrap-access">
                     <div>
-                        <span className="register-user-title">
+                        <span className="register-access-title">
                         <img src={olxIMG} alt="Logo olx" />
                         </span>
-                        <span className="register-user-title">Crie a sua conta!</span>
+                        <span className="register-access-title">Crie a sua conta!</span>
                         </div>
-                            <form onSubmit={hadleSubmit} className="register-user-form">
+                    <form onSubmit={hadleSubmit} className="register-access-form">
                             <label>
                             E-mail
-                            <input type="email" value={email} onChange={hadleEmailChange} className="register-user-email" placeholder="E-mail" />
+                            <input type="text" value={email} onChange={hadleEmailChange} className="register-access-email" placeholder="E-mail" />
                             </label>
                             <br />
                             <label>
                             Senha
-                            <input type="passaword" value={senha} onChange={hadleSenhaChange} className="register-user-password" placeholder="Senha com até 8 caracteres"/>
+                            <input type="password" value={senha} onChange={hadleSenhaChange} className="register-access-password" placeholder="Senha com até 8 caracteres"/>
                             </label>
                             <br />
-                            <button type="submit" className="button">Cadastrar</button>
+                            <button type="submit" className="button-access"><b>Cadastrar</b></button>
 
                             <div>
                                 <span className="txt">Não tem uma conta?</span>
-                                <a className="txt2" href="http://localhost:3000/usuario/register-user">Cadastre-se</a>
+                                <a className="txt2" href="#">Cadastre-se</a>
                             </div>
-                        </form>
+                    </form>
                 </div>   
             </div>
         </div>

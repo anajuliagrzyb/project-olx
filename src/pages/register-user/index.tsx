@@ -35,7 +35,7 @@ export const RegisterUser = () => {
     }
 
     return (
-        <div className="container">
+        <div className="container-user">
             <div className="container-register-user">
                 <div className="wrap-user">
                     <div>
@@ -52,7 +52,7 @@ export const RegisterUser = () => {
                             <br />
                             <label>
                             E-mail
-                            <input type="email" value={email} onChange={hadleEmailChange} className="register-user-email" placeholder="E-mail" />
+                            <input type="text" value={email} onChange={hadleEmailChange} className="register-user-email" placeholder="E-mail" />
                             </label>
                             <br />
                             <label>
@@ -62,14 +62,14 @@ export const RegisterUser = () => {
                             <br />
                             <label>
                             Telefone
-                            <input type="tel" value={telefone} onChange={hadleTelefoneChange} className="register-user-telefone" placeholder="(00) 00000-0000" />
+                            <input type="number" value={telefone} onChange={hadleTelefoneChange} className="register-user-telefone" placeholder="(00) 00000-0000" />
                             </label>
                             <br />
-                            <button type="submit" className="button">Cadastrar</button>
+                            <button type="submit" className="button-user">Cadastrar</button>
 
                             <div>
-                                <span className="txt">Já tem uma conta?</span>
-                                <a className="txt2" href="#">Entrar</a>
+                                <span className="details-count">Já tem uma conta?</span>
+                                <a className="enter-count" href="#">Entrar</a>
                             </div>
                         </form>
                 </div>   
@@ -81,6 +81,8 @@ export const RegisterUser = () => {
         
     );
 };
+
+export default RegisterUser;
 
 
 

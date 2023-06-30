@@ -1,9 +1,9 @@
 .container {
-    width: 200px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
+    padding: 50px 50px 50px 50px ;
     margin: auto;
     background-color: #F8F8FF;
-    padding: 200px 200px 200px 200px;
     margin-top: auto;
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serifs;
@@ -12,7 +12,7 @@
     
 }
 
-.register-user-title {
+.register-access-title {
     display: block;
     font-size: 20px;
     color: grey;
@@ -21,11 +21,11 @@
     
 }
 
-.register-user-title img {
+.register-access-title img {
     width: 90px;
 }
 
-.register-user-form {
+.register-access-form {
     color: grey;
     padding: 10px;
     height: 200px;
@@ -33,34 +33,39 @@
 }
 
 
-.register-user-email {
+.register-access-email {
     padding: 8px;
-    height: 15px;
-    width: 200px;
+    height: 25px;
+    width: 300px;
     display: flex;
     border-radius: 8px;
     border:#F8F8FF; 
 }
-.register-user-password {
+.register-access-password {
     padding: 8px;
-    height: 15px;
-    width: 200px;
+    height: 25px;
+    width: 300px;
     display: flex;
     border-radius: 8px;
     border:#F8F8FF; 
 }
 
 
-button {
+.button-access {
     width: 120px;
     height: 30px;
+    
     align-items: center;
-    margin: 10px;
+    margin-left: 80px;
     border-radius: 10px;
     background-color: darkorange;
     border: #F8F8FF;
     color: #F8F8FF;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.txt {
+    padding: 10px;
 }
 
 .txt2 {

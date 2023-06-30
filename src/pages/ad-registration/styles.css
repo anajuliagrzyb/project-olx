@@ -1,0 +1,94 @@
+.container-ad {
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+    background-color: transparent;
+    padding: 50px;
+    margin-top: auto;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10px;
+}
+
+.header-ad {
+    width: 100%;
+
+}
+
+.header-ad img{
+    width: 70px;
+    height: 36px;
+}
+
+.register-ad-title {
+    display: block;
+    font-size: 26px;
+    color: #474A51;
+    line-height: 1.9;
+    text-align: center;
+    
+}
+
+.ad-registration-form {
+    font-size: large;
+}
+
+
+
+.ad-title {
+    padding: 14px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+    border: #a1a6b2, 1x;
+}
+
+.ad-description {
+    padding: 14px;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+    border: #a1a6b2, 1x;
+}
+
+.ad-user {
+    padding: 14px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+    border:#a1a6b2, 1px;
+}
+
+.ad-price {
+    padding: 14px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+    border: #a1a6b2, 1x;
+}
+
+.ad-color {
+    padding: 14px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+    border: #a1a6b2, 1x;
+}
+
+
+.button-ad {
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    border-radius: 45px;
+    font-size:larger;
+    background-color: darkorange;
+    border: white;
+    color: white;
+    
+}

@@ -1,9 +1,9 @@
-.container {
-    width: 200px;
-    height: 500px;
+.container-user {
+    width: 400px;
+    height: 600px;
     margin: auto;
     background-color: #F8F8FF;
-    padding: 200px 200px 200px 200px;
+    padding: 50px 50px 50px 50px;
     margin-top: auto;
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serifs;
@@ -34,8 +34,8 @@
 
 .register-user-name {
     padding: 8px;
-    height: 15px;
-    width: 200px;
+    height: 25px;
+    width: 300px;
     display: flex;
     border-radius: 8px;
     border:#F8F8FF; 
@@ -43,35 +43,37 @@
 
 .register-user-email {
     padding: 8px;
-    height: 15px;
-    width: 200px;
+    height: 25px;
+    width: 300px;
     display: flex;
     border-radius: 8px;
     border:#F8F8FF; 
 }
 .register-user-password {
     padding: 8px;
-    height: 15px;
-    width: 200px;
+    height: 25px;
+    width: 300px;
     display: flex;
     border-radius: 8px;
     border:#F8F8FF; 
+    text-transform:unset;
 }
 
 .register-user-telefone {
     padding: 8px;
-    height: 15px;
-    width: 200px;
+    height: 25px;
+    width: 300px;
     display: flex;
     border-radius: 8px;
     border:#F8F8FF; 
 }
 
-button {
+.button-user {
     width: 120px;
     height: 30px;
+    
     align-items: center;
-    margin: 10px;
+    margin-left: 80px;
     border-radius: 10px;
     background-color: darkorange;
     border: #F8F8FF;
@@ -79,6 +81,11 @@ button {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.txt2 {
+.details-count{
+    padding: 20px;
+    margin-right: 19px;
+}
+
+.enter-count{
     color: blueviolet;
 }

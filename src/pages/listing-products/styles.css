@@ -1,0 +1,92 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container-listing {
+    
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    gap: 1.25em;
+    margin-top: 2em;
+}
+
+
+header {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    
+}
+
+header img{
+    width: 80px;
+    height: 40px;
+    
+}
+
+
+
+.products-listing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f6f6f6;
+    
+    border-radius: 8px;
+    padding: 1px;
+    margin: 10px;
+}
+
+.products-listing img {
+    width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.products-listing img:hover {
+    transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.conteudo {
+    margin-left: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.conteudo span:first-child {
+    padding:auto;
+    font-size: large;
+    font-weight: 600;
+    color: #666;
+  }
+
+.conteudo span:last-child {
+    font-size: 14px;
+    
+  } 
+
+  .button-ad-register {
+    width: 150px;
+    height: 40px;
+    background-color: darkorange;
+    color: white;
+    border-radius: 100px;
+    border-color: darkorange;
+  }
+
+  footer {
+    color: #666;
+    padding: 200px 100px 200px 200px;
+  }
+
+ 
