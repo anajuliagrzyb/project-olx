@@ -57,19 +57,19 @@ export const RegisterUser = () => {
                             <br />
                             <label>
                             Senha
-                            <input type="passaword" value={senha} onChange={hadleSenhaChange} className="register-user-password" placeholder="Senha com até 8 caracteres"/>
+                            <input type="password" value={senha} onChange={hadleSenhaChange} className="register-user-password" placeholder="Senha com até 8 caracteres"/>
                             </label>
                             <br />
                             <label>
                             Telefone
-                            <input type="number" value={telefone} onChange={hadleTelefoneChange} className="register-user-telefone" placeholder="(00) 00000-0000" />
+                            <input type="text" value={telefone} onChange={hadleTelefoneChange} className="register-user-telefone" placeholder="(00) 00000-0000" />
                             </label>
                             <br />
                             <button type="submit" className="button-user">Cadastrar</button>
 
                             <div>
                                 <span className="details-count">Já tem uma conta?</span>
-                                <a className="enter-count" href="#">Entrar</a>
+                                <a className="enter-count" href="http://localhost:3000/usuario/user-access">Entrar</a>
                             </div>
                         </form>
                 </div>   

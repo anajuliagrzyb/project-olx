@@ -49,7 +49,7 @@ export const UserAccess = () => {
 
                             <div>
                                 <span className="txt">Não tem uma conta?</span>
-                                <a className="txt2" href="#">Cadastre-se</a>
+                                <a className="txt2" href="http://localhost:3000/cadastro/registeruser">Cadastre-se</a>
                             </div>
                     </form>
                 </div>   

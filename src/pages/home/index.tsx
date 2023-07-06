@@ -3,7 +3,7 @@ import {produtos as IProdutos} from "../../../src/types/produtos"
 import olxIMG from './assets/olx.png'
 import './styles.css';
 
-const Listing = () => {
+const Home = () => {
     const [id, setId] = useState('');
     const [search, setSearch] = useState('');
 
@@ -21,21 +21,7 @@ setProdutos([{
     description: 'Iphone 11 64GB'
 },
 
-{
-    id: 2,
-    productName: "Iphone 12",
-    price: 4500.00,
-    productImage: 'https://images.tcdn.com.br/img/img_prod/1154447/iphone_12_apple_64gb_roxo_tela_de_6_1_e_camera_dupla_de_12_mp_lacrado_645_1_9ec0c09feb8b020fb47575e36a16c9aa.png',
-    description: 'Iphone 12 120GB'
-},
 
-{
-    id: 3,
-    productName: "Iphone 13",
-    price: 5500.00,
-    productImage: 'https://pngimg.com/d/iphone_13_PNG29.png',
-    description: 'Iphone 13 1TB'
-}
 ])
 },[])
 
@@ -74,4 +60,4 @@ return (
     );
 
 };
-export default Listing;
+export default Home;

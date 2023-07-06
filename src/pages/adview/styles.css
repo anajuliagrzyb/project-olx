@@ -1,18 +1,15 @@
-
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif
 }
 
-.container-listing {
-    
+.container-adview {
     grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
     gap: 1.25em;
     margin-top: 2em;
 }
-
 
 header {
     height: 100px;
@@ -25,15 +22,13 @@ header {
 }
 
 header img{
-    width: 80px;
-    height: 40px;
+    width: 60px;
+    height: 30px;
     
 }
 
-
-
-.products-listing {
-    display: flex;
+.products-adview {
+    /*display: flex;*/
     flex-direction: row;
     align-items: center;
     background-color: #f6f6f6;
@@ -43,39 +38,64 @@ header img{
     margin: 10px;
 }
 
-.products-listing img {
-    width: 100px;
-  height: 100px;
-  border-radius: 8px;
-  background-size: cover;
-  object-fit: cover;
+.products-adview img {
+  max-width: 100%;
+  max-height: 280px;
+  margin: 0px auto;
+  display: block;
+  
 }
 
-.products-listing img:hover {
-    transform: scale(1.1);
-  transition: transform 0.3s;
-}
-
-.conteudo {
+.dados-adview {
     margin-left: 6px;
     display: flex;
     flex-direction: column;
 }
 
-
-.conteudo span:first-child {
+.dados-adview span:first-child {
     padding:auto;
-    font-size: large;
+    font-size: 36px;
+    font-weight: 400;
+    color: #4a4a4a;
+    height: 50px;
+  }
+  #middle {
+    height: 50px;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    font-style: normal;
     font-weight: 600;
-    color: #666;
+    line-height: 1.32;
+    font-size: 22px;
+    color: #4a4a4a;
   }
 
-.conteudo span:last-child {
-    font-size: 14px;
+  .dados-adview span:last-child {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    font-style: normal;
+    
+    line-height: 1.32;
+    font-size: 15px;
+    color: #4a4a4a;
     
   } 
 
-  .button-ad-register {
+
+  #descricao {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.32;
+    font-size: 22px;
+    color: #4a4a4a;
+  }
+
+  .button-adview {
     width: 150px;
     height: 40px;
     background-color: darkorange;
@@ -84,17 +104,10 @@ header img{
     border-color: darkorange;
   }
 
-  .search {
+  .adview-search {
     padding: 10px;
     width: 100%;
     height: 50px;
     border-radius: 12px;
     border-color: #D1D0CE;
   }
-
-  footer {
-    color: #666;
-    padding: 200px 100px 200px 200px;
-  }
-
- 
